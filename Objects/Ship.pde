@@ -1,5 +1,7 @@
 // class Ship
+
 class Ship {
+
   // properties of Ships -- variables associated to ships
 
   // varibale for ship
@@ -10,6 +12,7 @@ class Ship {
 
   // constructor --  this is how Ships get made
   Ship() {
+
     //position of ship
     xPos = width/2;
     yPos = height/2;
@@ -21,6 +24,7 @@ class Ship {
   //methods -- things that ships do
 
   void display() {
+
     //spaceship
     image(photo, xPos, yPos);
 
@@ -41,6 +45,7 @@ class Ship {
   }
 
   void move() {
+
     //user controlled movement
 
     //left

@@ -1,6 +1,6 @@
 //Objects
 Star [] stars;
-//
+
 
 Ship lollipop;
 Star Tootsie;
@@ -20,10 +20,9 @@ void setup() {
 
 void draw() {
 
-  ////space
+  //space
   background(0);
 
-  //lollipop.display();
   for (int i =0; i<stars.length; i++) {
 
     //displays Stars
