@@ -1,34 +1,27 @@
 //Objects
 
-//properties (assoiated variables)
-int x;
-int y;
 
-Tree drake = new Tree();
+Ship lollipop;
+Stars Tootsie;
 
-void setup(){
-  size(800, 600);
-  background(255);
-}
-void draw(){
-  background(255);
-  drake.display();
-  drake.move();
-}
+void setup() {
+  size(1500, 1000);
 
-// constructor
-
-
-//methods
-
-void move() {
-  x++;
+  lollipop = new Ship();
+  Tootsie = new Stars();
 }
 
 
-void display(){
-//Drakes Tree
-fill(#BASE12);
-rect(x, y, 20, 80);
+void draw() {
 
+  ////space
+  background(0);
+
+  //displays Stars
+  Tootsie.display();
+  //displays ship
+  lollipop.display();
+
+  //moves Ship
+  lollipop.move();
 }
