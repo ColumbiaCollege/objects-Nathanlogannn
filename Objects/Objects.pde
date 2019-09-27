@@ -1,6 +1,6 @@
 //Objects
 Star [] stars;
- //
+//
 
 Ship lollipop;
 Star Tootsie;
@@ -8,8 +8,8 @@ Star Tootsie;
 void setup() {
   size(1500, 1000);
   stars = new Star[100];
-  
-  for (int i =0; i<stars.length; i++){
+
+  for (int i =0; i<stars.length; i++) {
     stars[i] = new Star();
   }
 
@@ -23,19 +23,19 @@ void draw() {
   ////space
   background(0);
 
-  //displays Stars
-  //Tootsie.display();
-  
   //lollipop.display();
-  for (int i =0; i<stars.length; i++){
-    //?stars[i] = new Star();
-stars[i].display();
-stars[i].move();
+  for (int i =0; i<stars.length; i++) {
+
+    //displays Stars
+    stars[i].display();
+
+    //moves Stars
+    stars[i].move();
   }
+
   //moves Ship
   lollipop.move();
-  //displays ship
-   lollipop.display();
-  //moves stars
 
+  //displays ship
+  lollipop.display();
 }
